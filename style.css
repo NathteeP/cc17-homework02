@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+/* header - navbar */
+
+header {
+    display: flex;
+    height: 72px;
+    padding: 8px;
+    justify-content: space-around;
+
+}
+header a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.navbar__branding {
+    height: 55px;
+    width: 189px;
+    display: flex;
+    align-items: center;
+}
+.navbar__branding img {
+    width: 100%;
+}
+.navbar__middle {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.navbar__right {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.navbar__right-img {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__right svg {
+    height: 24px;
+}
+
+/* main content */
+
+main h1 {
+    margin-left: 160px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 500;
+}
+.main-container {
+    margin-inline: 160px;
+    display: flex;
+}
+.product {
+    width: 50%;
+    min-width: 450px;
+}
+
+.google-docs , .google-slides {
+    display: flex;
+    align-items: center;
+    margin-block: 60px;
+}
+
+.product__trash-icon {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    border: solid #00dbb6 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    flex-shrink: 0;
+}
+
+.product__trash-icon svg {
+    height: 60%;
+}
+
+.product__main-content {
+    height: 160px;
+    width: 160px;
+    border-radius: 12px;
+    padding: 20px;
+    flex-shrink: 0;
+}
+.product__main-content h6 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-block: 8px;
+}
+.product__main-content p {
+    color: white;
+    font-size: 12px;
+    margin-block: 8px;
+}
+
+.google-docs .product__main-content {
+    background-color: #60A3F2;
+}
+.google-slides .product__main-content {
+    background-color: #F09A4D;
+}
+.product__img-container {
+    height: 32px;
+    width: 32px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product__img-container img {
+    height: 40%;
+}
+
+.product__main-text {
+    padding-inline: 20px;
+}
+.product__main-text > * {
+    margin-block: 16px;
+}
+.product__main-text h2 {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.product__lv-selecter {
+    display: flex;
+    margin-top: 4px;
+}
+
+.lv-display {
+    height: 10px;
+    width: 10px;
+    background-color: #00dbb6;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+/* order info */
+.order-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 40px 0;
+    width: 50%;
+    min-width: 360px;
+}
+
+
+.order-info__subtotal {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+.order-info__promocode {
+    display: flex;
+    height: 56px;
+    gap: 12px;
+    align-items: center;
+}
+
+.order-info__promocode form {
+    height: 100%;
+    width: 100%;
+    padding-block: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.order-info__promocode input {
+    height: 100%;
+    border-radius: 4px;
+    width: 50%;
+    min-width: 132px;
+    padding: 2px;
+    border-color: antiquewhite;
+}
+
+.order-info__promocode button {
+    height: 100%;
+    border-radius: 12px;
+    min-width: 100px;
+    width: 30%;
+    margin-inline: 16px;
+    border-color: #00dbb6;
+    color: #00dbb6;
+}
+
+.promocode__img-container {
+    height: 20px;
+    /* width: 20px; */
+    margin: 4px;
+}
+.promocode__img-container svg {
+    height: 100%;
+}
+.order-info__total-payment {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+}
+
+.order-info__total-payment .final-payment-value {
+    color: #00dbb6;
+    font-size: 2rem;
+}
+
+.order-info__checkout-button {
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    background-color: #00dbb6;
+
+}
